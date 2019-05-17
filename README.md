@@ -121,7 +121,7 @@ Add crontab task
 
 Description:
 <pre><code>
-# mysql-schema-sync -help
+# ./StructSync --help
 Usage of ./StructSync:
   -c    Use the param execute delete unnecessary field / index 
   -e    Execute adjust SQL to dest database, default true (default true)
