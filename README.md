@@ -3,9 +3,9 @@ Mysql table structure automatic synchronization tool
 
 Used to synchronize the `online` database structure <b>change</b> to `local environment`!
 Support function:
-1. Sync ** new table **
-2. Sync** field ** Change: Add, modify, delete
-3. Sync ** Index ** Change: Add, modify, delete
+1. Sync **new table**
+2. Sync **field** Change: Add, modify, delete
+3. Sync **Index** Change: Add, modify, delete
 4. Support **Preview** (compares struct and save to file, not execute)
 5. Support local extra lines, additional tables, fields, indexes, foreign keys
 
