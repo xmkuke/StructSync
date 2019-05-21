@@ -64,18 +64,18 @@ Configuration example (app.conf):
 ```
 
 #### json configuration item description
-SrcDbDsn: database synchronization source
-DestDbList: database to be synchronized, use array specify multiple databases
-ChanNum: Specify how many coroutines to execute simultaneously
-OutputDir: Save the adjusted SQL directory 
-DropUnecessary: Whether to delete extra fields or indexes, not delete by default
-InputMode: 1 Use standard database, 2 use schema file (you can export a database schema to file)
-ExecuteSQL: Whether to automatically perform the adjusted SQL to the target database, the default is to execute
-SaveSQL: Whether to save the adjusted SQL to the file
-TimeOut: Execute SQL timeout, default 600s(The length of time to adjust the database structure will vary depending on the amount of data in the database itself.)
-LogLevel: Display the log level of the execution record, ALL-0，DEBUG-1，INFO-2，WARN-3，ERROR-4，FATAL-5，OFF-6 
-LogPath: Log path
-LogFileName: Log filename, can use ${data} or ${time} param, default is 'StructSync_${date}.log'
+- SrcDbDsn: database synchronization source
+- DestDbList: database to be synchronized, use array specify multiple databases
+- ChanNum: Specify how many coroutines to execute simultaneously
+- OutputDir: Save the adjusted SQL directory 
+- DropUnecessary: Whether to delete extra fields or indexes, not delete by default
+- InputMode: 1 Use standard database, 2 use schema file (you can export a database schema to file)
+- ExecuteSQL: Whether to automatically perform the adjusted SQL to the target database, the default is to execute
+- SaveSQL: Whether to save the adjusted SQL to the file
+- TimeOut: Execute SQL timeout, default 600s(The length of time to adjust the database structure will vary depending on the amount of data in the database itself.)
+- LogLevel: Display the log level of the execution record, ALL-0，DEBUG-1，INFO-2，WARN-3，ERROR-4，FATAL-5，OFF-6 
+- LogPath: Log path
+- LogFileName: Log filename, can use ${data} or ${time} param, default is 'StructSync_${date}.log'
 
 ### Running
 ### Param & Usage
@@ -83,9 +83,9 @@ LogFileName: Log filename, can use ${data} or ${time} param, default is 'StructS
 Usage of ./StructSync:
   -c    Use the param execute delete unnecessary field / index 
   -e    Execute adjust SQL to dest database, default true (default true)
-  -i string
+  -i <filename>
         Default read source schema info from database， use -i，read source schema info from file
-  -o string
+  -o <filename>
         Save adjust SQL to file
 
 ```
@@ -125,9 +125,9 @@ Description:
 Usage of ./StructSync:
   -c    Use the param execute delete unnecessary field / index 
   -e    Execute adjust SQL to dest database, default true (default true)
-  -i string
+  -i <filename>
         Default read source schema info from database， use -i，read source schema info from file
-  -o string
+  -o <filename>
         Save adjust SQL to file
 
 </code>
